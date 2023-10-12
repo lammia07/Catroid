@@ -59,7 +59,7 @@ import org.catrobat.catroid.ui.recyclerview.ProjectListener
 import org.catrobat.catroid.ui.recyclerview.adapter.CategoriesAdapter
 import org.catrobat.catroid.ui.recyclerview.adapter.FeaturedProjectsAdapter
 import org.catrobat.catroid.ui.recyclerview.adapter.HorizontalProjectsAdapter
-import org.catrobat.catroid.ui.recyclerview.dialog.NewProjectDialogFragment
+import org.catrobat.catroid.ui.recyclerview.dialog.newproject.NewProjectDialogFragment
 import org.catrobat.catroid.ui.recyclerview.viewmodel.MainFragmentViewModel
 import org.catrobat.catroid.utils.FileMetaDataExtractor
 import org.catrobat.catroid.utils.ProjectDownloadUtil.setFragment

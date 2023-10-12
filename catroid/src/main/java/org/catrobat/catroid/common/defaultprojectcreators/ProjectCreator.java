@@ -41,7 +41,8 @@ public abstract class ProjectCreator {
 		return returnValue - differenceToNextFive;
 	}
 
-	public abstract Project createDefaultProject(String name, Context context, boolean landscapeMode) throws IOException;
+	public abstract Project createDefaultProject(String name, Context context, boolean landscapeMode,
+			int height, int width) throws IOException;
 
 	public int getDefaultProjectNameID() {
 		return defaultProjectNameResourceId;

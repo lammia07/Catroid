@@ -178,4 +178,16 @@ public class ProjectManagerTest {
 
 		TestUtils.deleteProjects(PROJECT_NAME_NESTING_BRICKS);
 	}
+
+	@Test
+	public void testCreateNewEmptyProject() throws IOException {
+		String projectName = "new project";
+		projectManager.createNewEmptyProject(projectName, false, false, 1500, 1000);
+		Project project = projectManager.getCurrentProject();
+
+		assertNotNull(project);
+		assertEquals(projectName, project.getName());
+
+		TestUtils.deleteProjects(projectName);
+	}
 }

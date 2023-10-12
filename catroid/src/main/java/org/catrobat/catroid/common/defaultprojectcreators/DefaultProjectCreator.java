@@ -71,8 +71,9 @@ public class DefaultProjectCreator extends ProjectCreator {
 	}
 
 	@Override
-	public Project createDefaultProject(String name, Context context, boolean landscapeMode) throws IOException {
-		Project project = new Project(context, name, landscapeMode);
+	public Project createDefaultProject(String name, Context context, boolean landscapeMode,
+			int height, int width) throws IOException {
+		Project project = new Project(context, name, landscapeMode, false, height, width);
 
 		if (project.getDirectory().exists()) {
 			throw new IOException("Cannot create new project at "
